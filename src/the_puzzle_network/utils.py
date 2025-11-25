@@ -1,12 +1,13 @@
 """Utility functions for The Puzzle Network."""
 
-import logging
 import os
 
 from dotenv import load_dotenv
 
+from .logging import get_logger
 
-logger = logging.getLogger(__name__)
+
+logger = get_logger(__name__)
 
 
 def load_env() -> str:
@@ -20,7 +21,3 @@ def load_env() -> str:
 
     logger.info("✅ OpenAI API key has been configured, %s can proceed.", app_name)
     return app_name
-
-
-# Note: extract_textpart function is no longer needed as agent-framework
-# handles response extraction differently through WorkflowOutputEvent

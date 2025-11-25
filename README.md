@@ -49,7 +49,7 @@ Every day 3 games (of type easy, medium and hard) are published to the respectiv
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/fokkog/the-puzzle-network-adk.git
+git clone https://github.com/fokkog/the-puzzle-network-maf.git
 ```
 
 2. Create and activate a virtual environment:

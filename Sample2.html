@@ -1,0 +1,36 @@
+<!-- Knight's Tour Puzzle - SANCTION -->
+<div style="display: flex; flex-direction: column; align-items: center;">
+
+  <!-- SVG 3x3 Chessboard Puzzle -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" style="margin-bottom: 1em;">
+    <rect x="0" y="0" width="180" height="180" fill="#F8FAFC" stroke="#444" stroke-width="2"/>
+    <!-- Draw grid lines -->
+    <line x1="60" y1="0" x2="60" y2="180" stroke="#444" stroke-width="2"/>
+    <line x1="120" y1="0" x2="120" y2="180" stroke="#444" stroke-width="2"/>
+    <line x1="0" y1="60" x2="180" y2="60" stroke="#444" stroke-width="2"/>
+    <line x1="0" y1="120" x2="180" y2="120" stroke="#444" stroke-width="2"/>
+    <!-- Letters -->
+    <text x="30" y="45" font-size="32" font-family="Verdana, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#30335c">N</text>
+    <text x="90" y="45" font-size="32" font-family="Verdana, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#30335c">S</text>
+    <text x="150" y="45" font-size="32" font-family="Verdana, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#30335c">C</text>
+    <text x="30" y="105" font-size="32" font-family="Verdana, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#30335c">A</text>
+    <!-- Center is empty -->
+    <rect x="62" y="62" width="56" height="56" fill="#e0e4ef" stroke="#a6aacd" stroke-width="1" rx="4"/>
+    <text x="150" y="105" font-size="32" font-family="Verdana, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#30335c">T</text>
+    <text x="30" y="165" font-size="32" font-family="Verdana, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#30335c">U</text>
+    <text x="90" y="165" font-size="32" font-family="Verdana, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#30335c">I</text>
+    <text x="150" y="165" font-size="32" font-family="Verdana, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle" fill="#30335c">O</text>
+  </svg>
+
+  <!-- Show Solution Button and Solution -->
+  <button id="show-solution-btn" style="padding: 0.6em 1.2em; border-radius: 6px; background: #357ec7; color: white; border: none; font-size: 1em; cursor: pointer; margin-bottom: 0.7em;">Show Solution</button>
+  <div id="solution" style="display: none; color: #357ec7; font-size: 1.3em; font-weight: bold; letter-spacing: 0.15em;">
+    SANCTION
+  </div>
+</div>
+<script>
+  document.getElementById('show-solution-btn').addEventListener('click', function() {
+    document.getElementById('solution').style.display = 'block';
+    this.style.display = 'none';
+  });
+</script>
