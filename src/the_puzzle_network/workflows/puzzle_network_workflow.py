@@ -7,11 +7,6 @@ from the_puzzle_network.agents.puzzle_formatter_agent import PuzzleFormatterAgen
 from the_puzzle_network.agents.puzzle_generator_agent import PuzzleGeneratorAgent
 from the_puzzle_network.agents.puzzle_publisher_agent import PuzzlePublisherAgent
 
-from ..logging import get_logger
-
-
-logger = get_logger(__name__)
-
 
 class PuzzleNetworkWorkflow:
     def __init__(self) -> None:

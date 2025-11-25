@@ -17,8 +17,8 @@ class PuzzleBaseAgent(ABC):
         self.agent = ChatAgent(
             chat_client=OpenAIChatClient(model_id="gpt-4.1"),
             name=self._get_name(),
-            instructions=self._get_instruction(),
             tools=self._get_tools(),
+            instructions=self._get_instruction(),
         )
 
     @abstractmethod
