@@ -5,6 +5,8 @@ import logging.config
 import os
 from pathlib import Path
 
+from agent_framework.observability import setup_observability
+
 
 def setup_logging() -> None:
     # Create logs directory if it doesn't exist
@@ -60,5 +62,6 @@ def get_logger(name: str) -> logging.Logger:
     return logging.getLogger(name)
 
 
-# Initialize logging when module is imported
+# Initialize logging and OTEL when module is imported
 setup_logging()
+setup_observability()
